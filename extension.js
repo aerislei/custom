@@ -19,7 +19,7 @@
         //Extend the bot here, either by calling another function or here directly.
 
         // You can add more spam words to the bot.
-        var spamWords = ['spam1', 'spam2','spammity', 'spam3', 'spam4'];
+        var spamWords = ['spam1', 'spam2', 'spam3', 'spam4'];
         for (var i = 0; i < spamWords.length; i++) {
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
@@ -46,20 +46,20 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "HestiaBot",
+      botName: "Hestiabot",
       language: "english",
       chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 10, // 1-200
-      startupVolume: 50, // 0-100
+      startupCap: 1, // 1-200
+      startupVolume: 0, // 0-100
       startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
       maximumAfk: 120,
-      afkRemoval: true,
+      afkRemoval: false,
       maximumDc: 60,
       bouncerPlus: true,
       blacklistEnabled: true,
@@ -67,14 +67,14 @@
       lockGuard: false,
       maximumLocktime: 10,
       cycleGuard: true,
-      maximumCycletime: 10,
+      maximumCycletime: 100000,
       voteSkip: false,
       voteSkipLimit: 10,
       historySkip: false,
       timeGuard: true,
       maximumSongLength: 10,
       autodisable: true,
-      commandCooldown: 30,
+      commandCooldown: 15,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
@@ -90,7 +90,7 @@
       afkRankCheck: "ambassador",
       motdEnabled: false,
       motdInterval: 5,
-      motd: "Testing bot hazzy is a boob",
+      motd: "Testing, Testing. 1...2...3",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
