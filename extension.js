@@ -46,19 +46,19 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "Hestiabot",
+      botName: "Hestiabot 2.0",
       language: "english",
       chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 10, // 1-200
-      startupVolume: 10, // 0-100
+      startupVolume: 50, // 0-100
       startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
-      maximumAfk: 120,
+      maximumAfk: 120000000,
       afkRemoval: false,
       maximumDc: 60,
       bouncerPlus: true,
@@ -67,14 +67,14 @@
       lockGuard: false,
       maximumLocktime: 10,
       cycleGuard: true,
-      maximumCycletime: 100000,
+      maximumCycletime: 1000000000,
       voteSkip: false,
       voteSkipLimit: 10,
       historySkip: false,
       timeGuard: true,
       maximumSongLength: 10,
       autodisable: true,
-      commandCooldown: 15,
+      commandCooldown: 5,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
